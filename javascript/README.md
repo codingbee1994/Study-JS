@@ -103,3 +103,115 @@ if (n>0) {
 !(not) - !t=f, !f=t
 
 #### switch 조건문
+
+3항 연산자 활용
+
+```js
+let n = 5;
+concole.log(n % 5 === 0 ? '5의 배수' : '5의 배수아님 ')
+```
+
+```js
+let n = 5;
+switch (n) {
+    default:
+        console.log(n);
+}
+```
+
+
+#### 반복문(for)
+```js
+console.log('hello');
+console.log('hello');
+console.log('hello');
+console.log('hello');
+console.log('hello');
+```
+```js
+for (let i = 0; i < 5; i++){
+    console.log('hello');
+}
+```
+
+for (초기화; 반복 조건; 반복이 된후 실행되는 코드){
+    코드블럭
+}
+
+for (a; b; c;){
+    d
+}
+    e
+
+a > d > c > b > d > b > e 
+
+
+for(;;){
+    d
+}
+
+d가 무한히 반복
+
+
+#### while 반복문
+while(조건){
+    조건이 거짓이 될 때까지 반복
+}
+
+do {
+    조건이 거짓이 될 때까지 반복
+} while(조건);
+
+
+for of - iterable한 객체 (ex. array)
+```js
+for (const i of [1, 2, 3]){
+    console.log(i);
+}
+```
+
+
+
+for in - 모든 프로퍼티 (객체 내부의 프로퍼티를)
+
+
+#### function
+<b>선언적함수
+function 함수명() {
+    함수의 바디
+}
+
+(매개변수) - 함수 호출 값 지정
+
+<b>익명함수
+const 함수명 = function(){
+    함수의 바디
+}
+
+<b>arrow 함수
+const hello1 - () => {
+    console.log('hello1');
+}
+
+<b>new 함수
+funtion person(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+const p = new person('mark', 27);
+console.log(p,p.name, p.age);
+
+const a = new person('anna', 24);
+console.log()
+
+
+```js
+board = [[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]]
+moves = [1,5,3,5,1,2,1,4]
+
+function solution(board, moves) {
+    var answer = 0;
+    return answer;
+}
+```
